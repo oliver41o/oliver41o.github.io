@@ -22,20 +22,23 @@
     <div>
         <p id="greeting">heeeeeellllloo :3</p>
     </div>
+    
     <div>
     <button onclick="load(document.getElementById('inputbox').value)">search</button>
 
     <input type="text" id="inputbox">
     </div>  
+    
     <div>
     <button onclick="add(1, document.getElementById('clickerbox'))">click here</button>
 
     <input type="text" id="clickerbox" readonly="true" value="0"></input>
+
+    <button onclick="document.getElementById('clickerbox').value = 0)"></button>
     </div>
 
     <div>
         <button onclick="crashpc()" style="display: none;" id="secretbox">click!</button>
     </div>
-    
 </body>
 </html>
