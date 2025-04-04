@@ -1,3 +1,4 @@
 function add(amount, textbox) {
-  textbox.value = textbox.value += amount
+  console.log(textbox.innerHTML, textbox.value);
+  textbox.innerHTML = textbox.value += amount;
 };
