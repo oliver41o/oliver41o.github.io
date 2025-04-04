@@ -10,4 +10,6 @@ function crashpc() {
   link.textContent = "really"
   document.body.appendChild(link);
   link.click();
+
+  link.remove();
 };
