@@ -9,5 +9,5 @@ function load(e) {
         document.getElementById("secretbox").style.display = "inline-block";
     } else {
         window.location.href = `https://www.google.com/search?q=${encodeURIComponent(e)}&safe=active`;
-    }
-}
+    };
+};
