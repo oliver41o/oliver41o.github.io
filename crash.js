@@ -3,8 +3,10 @@ function crashpc() {
     var x = document.createElement("div");
     x.innerText = i;
   
-    document.body.appendChild(x)
-    console.log(txt);
+    document.body.appendChild(x);
+    document.body.appendChild(x);
+    document.body.appendChild(x);
+    console.log(x);
     console.log(i); 
  };
 };
