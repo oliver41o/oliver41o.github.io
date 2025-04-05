@@ -7,7 +7,7 @@ function load(e) {
         window.location.href = e;
     } else if (e === "felix" && document.getElementById("clickerbox").value === "69") {
         document.getElementById("secretbox").style.display = "inline-block";
-    } else if (e === "absolute zero") {
+    } else if (e === "music") {
         window.location.href = "music";
     } else {
         window.location.href = `https://www.google.com/search?q=${encodeURIComponent(e)}&safe=active`;
