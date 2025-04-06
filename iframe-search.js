@@ -1,4 +1,5 @@
 function iframe_search(e) {
+    if (document.getElementById("searchInputBox") !== null) {document.getElementById("searchInputBox").remove();};
     const iframe = document.createElement("iframe");
     iframe.width = "500x";
     iframe.height = "400px";
