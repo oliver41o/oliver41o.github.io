@@ -20,6 +20,6 @@ function iframe_search(e) {
     } else if (e === "music") {
         iframe.src = "https://olivery4.github.io/music";
     } else {
-        iframe.src = `https://www.google.com/search?q=${encodeURIComponent(e)}&safe=active`;
+        window.location.href = `https://www.google.com/search?q=${encodeURIComponent(e)}&safe=active`;
     };
 };
