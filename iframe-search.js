@@ -10,7 +10,7 @@ function iframe_search(e) {
     document.body.appendChild(br);
     document.body.appendChild(iframe);
 
-    document.getElementById("inputSearchBox").value = "";
+    document.getElementById("searchInputBox").value = "";
     if (e === "secret") {
         iframe.src = "https://olivery4.github.io/secret";
     } else if (e === "peter is stinky") {
