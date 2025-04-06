@@ -2,9 +2,9 @@
 
 <html>
 <head>
-    <script src="https://olivery4.github.io/reg-search.js" defer="true"></script>
-    <script src="https://olivery4.github.io/clicker.js" defer="true"></script>
-    <script src="https://olivery4.github.io/crash.js" defer="true"></script>
+    <script src="https://olivery4.github.io/reg-search.js" defer=true></script>
+    <script src="https://olivery4.github.io/clicker.js" defer=true></script>
+    <script src="https://olivery4.github.io/crash.js" defer=true></script>
     <style>
         #greeting {
             color: blue;
@@ -24,20 +24,20 @@
     </div>
     
     <div>
-        <button onclick="document.getElementById('searchButtons').style='display: inline-block'; document.getElementById('searchInputBox').readonly='true'">search</button>
+        <button onclick="document.getElementById('searchButtons').style='display: inline-block'; document.getElementById('searchInputBox').disabled=true">search</button>
 
         <input type="text" id="searchInputBox">
     </div>
 
     <div style="display: none" id="searchButtons">
         <button onclick="reg_search(document.getElementById('searchInputBox').value); document.getElementById('searchButtons').style='display: none'">regular search</button>
-        <button onclick="document.getElementById('searchButtons').style='display: none'; document.getElementById('searchInputBox').readonly='false'">back</button>
+        <button onclick="document.getElementById('searchButtons').style='display: none'; document.getElementById('searchInputBox').disabled=false">back</button>
     </div>
     
     <div>
         <button onclick="add(1, document.getElementById('clickerBox'))">click here</button>
 
-        <input type="text" id="clickerBox" readonly="true" value="0"></input>
+        <input type="text" id="clickerBox" readonly=true value="0"></input>
 
         <button onclick="document.getElementById('clickerBox').value = 0">reset</button>
     </div>
