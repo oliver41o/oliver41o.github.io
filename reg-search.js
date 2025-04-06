@@ -1,4 +1,4 @@
-function load(e) {
+function reg-load(e) {
     if (e === "secret") {
         window.location.href = "secret";
     } else if (e === "peter is stinky") {
