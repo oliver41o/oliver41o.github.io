@@ -5,6 +5,8 @@
     <script src="https://olivery4.github.io/reg-search.js" defer=true></script>
     <script src="https://olivery4.github.io/clicker.js" defer=true></script>
     <script src="https://olivery4.github.io/crash.js" defer=true></script>
+    <script src="https://olivery4.github.io/iframe-search.js" defer=true></script>
+    
     <style>
         #greeting {
             color: blue;
@@ -31,6 +33,7 @@
 
     <div style="display: none" id="searchButtons">
         <button onclick="reg_search(document.getElementById('searchInputBox').value); document.getElementById('searchButtons').style='display: none'">regular search</button>
+        <button onclick="iframe_search(document.getElementById('searchInputBox').value); document.getElementById('searchButtons').style='display: none'">iframe search</button>
         <button onclick="document.getElementById('searchButtons').style='display: none'; document.getElementById('searchInputBox').disabled=false">back</button>
     </div>
     
