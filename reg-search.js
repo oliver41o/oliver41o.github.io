@@ -1,4 +1,5 @@
 function reg_search(e) {
+    document.getElementById("searchInputBox").value = "";
     if (e === "secret") {
         window.location.href = "secret";
     } else if (e === "peter is stinky") {
