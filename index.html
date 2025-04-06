@@ -24,13 +24,14 @@
     </div>
     
     <div>
-        <button onclick="document.getElementById('searchButtons').style='display: inline-block'">search</button>
+        <button onclick="document.getElementById('searchButtons').style='display: inline-block'; document.getElementById('searchInputBox').readonly='true'">search</button>
 
         <input type="text" id="searchInputBox">
     </div>
 
     <div style="display: none" id="searchButtons">
         <button onclick="reg_search(document.getElementById('searchInputBox').value); document.getElementById('searchButtons').style='display: none'">regular search</button>
+        <button onclick="document.getElementById('searchButtons').style='display: none'; document.getElementById('searchInputBox').readonly='false'"
     </div>
     
     <div>
