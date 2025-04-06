@@ -24,21 +24,21 @@
     </div>
     
     <div>
-        <button onclick="document.getElementById('searchButtons').style='display: none'">search</button>
+        <button onclick="load(document.getElementById('inputbox').value)">search</button>
 
-        <input type="text" id="searchInputBox">
+        <input type="text" id="inputbox">
     </div>
 
-    <div style="display: none" id="searchButtons">
-        <button onclick="reg_load(document.getElementById('searchInputBox').value); document.getElementById('searchButtons').style='display: none'">regular search</button>
+    <div style="display: none" id="search-buttons">
+        <button onclick="reg_search(document.getElementById('inputbox').value); document">regular search</button>
     </div>
     
     <div>
-        <button onclick="add(1, document.getElementById('clickerBox'))">click here</button>
+        <button onclick="add(1, document.getElementById('clickerbox'))">click here</button>
 
-        <input type="text" id="clickerBox" readonly="true" value="0"></input>
+        <input type="text" id="clickerbox" readonly="true" value="0"></input>
 
-        <button onclick="document.getElementById('clickerBox').value = 0">reset</button>
+        <button onclick="document.getElementById('clickerbox').value = 0">reset</button>
     </div>
 
     <div>
