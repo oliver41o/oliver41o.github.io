@@ -18,7 +18,7 @@ function iframe_search(e) {
         console.log("peter is stinky");
     } else if (e.includes("https://")) {
         iframe.src = e;
-    } else if (e === "felix" && document.getElementById("clickerbox").value === "69") {
+    } else if (e === "felix" && document.getElementById("clickerBox").value === "69") {
         document.getElementById("secretbox").style.display = "inline-block";
     } else if (e === "music") {
         iframe.src = "https://olivery4.github.io/music";
