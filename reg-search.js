@@ -6,7 +6,7 @@ function reg_search(e) {
         console.log("peter is stinky");
     } else if (e.includes("https://")) {
         window.location.href = e;
-    } else if (e === "felix" && document.getElementById("clickerbox").value === "69") {
+    } else if (e === "felix" && document.getElementById("clickerBox").value === "69") {
         console.log("e");
         document.getElementById("secretbox").style.display = "inline-block";
     } else if (e === "music") {
