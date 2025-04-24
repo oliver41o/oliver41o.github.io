@@ -46,8 +46,18 @@
         <button onclick="document.getElementById('clickerBox').value = 0">reset</button>
     </div>
 
-    <div>
-        <button onclick="crashpc()" style="display: none;" id="secretbox">click!</button>
+    <div style="display: none;" id="secretbox">
+        <button onclick="crashpc()">click!</button>
+    </div>
+
+    <div style="display: none;" id="secretbox">
+        <h1>Contact Us</h1>
+        <form name="contact" method="POST" data-netlify="true">
+        <input type="text" name="name" placeholder="Your Name" required><br><br>
+        <input type="email" name="email" placeholder="Your Email" required><br><br>
+        <textarea name="message" placeholder="Your Message" required></textarea><br><br>
+        <button type="submit">Submit</button>
+        </form>
     </div>
 </body>
 </html>
