@@ -12,7 +12,7 @@ for (let i = 0; i < forms.length; i++) {
       formDataObject[key] = value;
     });
 
-    fetch("https://your-server-url.com/submit-form", {
+    fetch("https://olivery4-github-io.onrender.com/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
