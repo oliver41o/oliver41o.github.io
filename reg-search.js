@@ -7,8 +7,7 @@ function reg_search(e) {
     } else if (e.includes("https://")) {
         window.location.href = e;
     } else if (e === "felix" && document.getElementById("clickerBox").value === "69") {
-        console.log("e");
-        document.getElementById("secretbox").style.display = "inline-block";
+        let a = document.getElementsByClassName('secretbox'); for (let i = 0; i < a.length; i++) {a[i].style.display='block'}
     } else if (e === "music") {
         window.location.href = "music";
     } else {
