@@ -29,11 +29,34 @@
     </div>
 
     <div>
-        <button onclick='getIp()'>e</button>
+        <button onclick='getSubmissions()'>e</button>
     </div>
 
     <script>
-        function getIp() {fetch("https://olivery4-github-io.onrender.com/test", {method: 'POST'})}
+        function getSubmissions() {
+            const password = prompt('Enter the password:');
+          
+            fetch("https://olivery4-github-io.onrender.com/submissions", {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json', // Ensure the content type is set to JSON
+                'password': password
+              }
+            })
+            .then(response => {
+              if (!response.ok) {
+                throw new Error(`Error: ${response.statusText}`);
+              }
+              return response.json();
+            })
+            .then(data => {
+              console.log('Submissions:', data);
+            })
+            .catch(error => {
+              console.error('Error:', error);
+            });
+      }
+
     </script>
     
     <div>
