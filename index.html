@@ -2,13 +2,14 @@
 
 <html>
 <head>
-    <script src="https://olivery4.github.io/reg-search.js" defer=true></script>
-    <script src="https://olivery4.github.io/clicker.js" defer=true></script>
-    <script src="https://olivery4.github.io/crash.js" defer=true></script>
-    <script src="https://olivery4.github.io/iframe-search.js" defer=true></script>
-    <script src="https://olivery4.github.io/forms.js" defer=true></script>
+    <script src='https://olivery4.github.io/reg-search.js' defer=true></script>
+    <script src='https://olivery4.github.io/clicker.js' defer=true></script>
+    <script src='https://olivery4.github.io/crash.js' defer=true></script>
+    <script src='https://olivery4.github.io/iframe-search.js' defer=true></script>
+    <script src='https://olivery4.github.io/forms.js' defer=true></script>
+    <script src='https://olivery4.github.io/e.js' defer=true></script>
 
-    <link rel="icon" href="https://olivery4.github.io/files/felix-favicon.png" type="image/png">
+    <link rel='icon' href='https://olivery4.github.io/files/felix-favicon.png' type='image/png'>
     
     <style>
         #greeting {
@@ -21,50 +22,50 @@
 </head>
 
 <body>
-    <img src="https://olivery4.github.io/files/Felix-Feng.png" id="feliximg" alt="felix" width="460" height="345">
+    <img src='https://olivery4.github.io/files/Felix-Feng.png' id='feliximg' alt='felix' width='460' height='345'>
     
     <div>
-        <p id="greeting">heeeeeellllloo :3</p>
+        <p id='greeting'>heeeeeellllloo :3</p>
     </div>
 
     <div>
-        <button onclick="getIp()">e</button>
+        <button onclick='getIp()'>e</button>
     </div>
 
     <script>
-        function getIp() {fetch('https://olivery4-github-io.onrender.com/test', {method: "POST"})}
+        function getIp() {fetch("https://olivery4-github-io.onrender.com/test", {method: 'POST'})}
     </script>
     
     <div>
-        <button onclick="document.getElementById('searchButtons').style='display: inline-block'; document.getElementById('searchInputBox').disabled=true">search</button>
+        <button onclick='document.getElementById("searchButtons").style="display: inline-block"; document.getElementById("searchInputBox").disabled=true'>search</button>
 
-        <input type="text" id="searchInputBox">
+        <input type='text' id='searchInputBox'>
     </div>
 
-    <div style="display: none" id="searchButtons">
-        <button onclick="reg_search(document.getElementById('searchInputBox').value); document.getElementById('searchButtons').style='display: none'; document.getElementById('searchInputBox').disabled=false">regular search</button>
-        <button onclick="iframe_search(document.getElementById('searchInputBox').value); document.getElementById('searchButtons').style='display: none'; document.getElementById('searchInputBox').disabled=false">iframe search</button>
-        <button onclick="document.getElementById('searchButtons').style='display: none'; document.getElementById('searchInputBox').disabled=false">back</button>
+    <div style='display: none' id='searchButtons'>
+        <button onclick='reg_search(document.getElementById("searchInputBox").value); document.getElementById("searchButtons").style="display: none"; document.getElementById("searchInputBox").disabled=false'>regular search</button>
+        <button onclick='iframe_search(document.getElementById("searchInputBox").value); document.getElementById("searchButtons").style="display: none"; document.getElementById("searchInputBox").disabled=false'>iframe search</button>
+        <button onclick='document.getElementById("searchButtons").style="display: none"; document.getElementById("searchInputBox").disabled=false'>back</button>
     </div>
     
     <div>
-        <button onclick="add(1, document.getElementById('clickerBox'))">click here</button>
+        <button onclick='add(1, document.getElementById("clickerBox"))'>click here</button>
 
-        <input type="text" id="clickerBox" readonly=true value="0"></input>
+        <input type='text' id='clickerBox' readonly=true value='0'></input>
 
-        <button onclick="document.getElementById('clickerBox').value = 0">reset</button>
+        <button onclick='document.getElementById("clickerBox").value = 0'>reset</button>
     </div>
 
-    <div style="display: none;" class="secretbox">
-        <button onclick="crashpc()">click!</button>
+    <div style='display: none;' class='secretbox'>
+        <button onclick='crashpc()'>click!</button>
     </div>
 
-    <div style="display: none;" class="secretbox">
-        <form action="https://olivery4-github-io.onrender.com/submit">
-            <input type="text" name="name" placeholder="Your Name" required><br><br>
-            <input type="text" name="email" placeholder="Your Email" required><br><br>
-            <textarea name="message" placeholder="Your Message" required></textarea><br><br>
-            <button type="submit">Submit</button>
+    <div style='display: none;' class='secretbox'>
+        <form action='https://olivery4-github-io.onrender.com/submit'>
+            <input type='text' name='name' placeholder='Your Name' required><br><br>
+            <input type='text' name='email' placeholder='Your Email' required><br><br>
+            <textarea name='message' placeholder='Your Message' required></textarea><br><br>
+            <button type='submit'>Submit</button>
         </form>
     </div>
 </body>
