@@ -28,8 +28,12 @@
     </div>
 
     <div>
-        <button onclick="fetch('https://olivery4-github-io.onrender.com/test', {method: "POST"})">e</button>
+        <button onclick="getIp()">e</button>
     </div>
+
+    <script>
+        function getIp() {fetch('https://olivery4-github-io.onrender.com/test', {method: "POST"})}
+    </script>
     
     <div>
         <button onclick="document.getElementById('searchButtons').style='display: inline-block'; document.getElementById('searchInputBox').disabled=true">search</button>
