@@ -10,6 +10,8 @@ function reg_search(e) {
         let a = document.getElementsByClassName('secretbox'); for (let i = 0; i < a.length; i++) {a[i].style.display='block'}
     } else if (e === "music") {
         window.location.href = "music";
+    } else if (e === "hianime") {
+        document.querySelector('#hianime').style.display = block;
     } else {
         window.location.href = `https://www.google.com/search?q=${encodeURIComponent(e)}&safe=active`;
     };
