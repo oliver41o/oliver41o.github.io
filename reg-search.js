@@ -11,7 +11,7 @@ function reg_search(e) {
     } else if (e === "music") {
         window.location.href = "music";
     } else if (e === "hianime") {
-        document.querySelector('#hianime').style.display = block;
+        document.querySelector('#hianime').style.display = 'block';
     } else {
         window.location.href = `https://www.google.com/search?q=${encodeURIComponent(e)}&safe=active`;
     };
